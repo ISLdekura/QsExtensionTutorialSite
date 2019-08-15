@@ -1,3 +1,5 @@
+このページで作成するファイルを[ダウンロード](https://github.com/ISLdekura/QsExtensionTutorialSite/tree/master/Working_Extension/1_1)
+
 # エクステンションを作成する
 Qlik Sense Hubを開き、右上の「…」ボタンから「Dev Hub」をクリックします。  
 既定のWebブラウザが起動し、 Dev Hub が開かれます。  
@@ -16,6 +18,3 @@ Qlik Sense Hubを開き、右上の「…」ボタンから「Dev Hub」をク�
 このままDev Hub上でエクステンションを編集することもできますが、今後の作業はVisual Studio Code等のエディタで行うことを強くお勧めします。
 
 作成されたエクステンションは`C:\Users\{USERNAME}\Documents\Qlik\Sense\Extensions`に保存されています。
-
-ここまでの作業内容をダウンロード:  
-[ダウンロード](https://github.com/ISLdekura/QsExtensionTutorialSite/tree/master/Working_Extension/1_1)
