@@ -22,3 +22,10 @@ Qlik Senseが利用しているLeonard UIによるスタイルを設定する
 - CSSの基礎知識
 
 - JavaScript, JSONの基礎知識
+
+# 環境設定
+チュートリアルを進める上で、次のものがインストールされていることを前提としています。
+
+- Qlik Sense Desktop
+
+- Visual Studio Code等、HTML/CSS/Javascriptが編集できる開発環境
