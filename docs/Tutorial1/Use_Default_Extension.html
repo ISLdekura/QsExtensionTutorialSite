@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>テンプレートからエクステンション作成 · GitBook</title>
+        <title>まずはカスタマイズしないで使ってみる · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="Use_Default_Extension.html" />
+    <link rel="next" href="Extension_File_List.html" />
     
     
-    <link rel="prev" href="Tutorial1_Make_Strait_Table.html" />
+    <link rel="prev" href="Make_Extension.html" />
     
 
     </head>
@@ -142,7 +142,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="2.1.1" data-path="Make_Extension.html">
+        <li class="chapter " data-level="2.1.1" data-path="Make_Extension.html">
             
                 <a href="Make_Extension.html">
             
@@ -155,7 +155,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.1.2" data-path="Use_Default_Extension.html">
+        <li class="chapter active" data-level="2.1.2" data-path="Use_Default_Extension.html">
             
                 <a href="Use_Default_Extension.html">
             
@@ -320,7 +320,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >テンプレートからエクステンション作成</a>
+        <a href=".." >まずはカスタマイズしないで使ってみる</a>
     </h1>
 </div>
 
@@ -335,15 +335,19 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <p>&#x3053;&#x306E;&#x30DA;&#x30FC;&#x30B8;&#x3067;&#x4F5C;&#x6210;&#x3059;&#x308B;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;<a href="https://github.com/ISLdekura/QsExtensionTutorialSite/tree/master/Working_Extension/1_1" target="_blank">&#x30C0;&#x30A6;&#x30F3;&#x30ED;&#x30FC;&#x30C9;</a></p>
-<h1 id="&#x30A8;&#x30AF;&#x30B9;&#x30C6;&#x30F3;&#x30B7;&#x30E7;&#x30F3;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;">&#x30A8;&#x30AF;&#x30B9;&#x30C6;&#x30F3;&#x30B7;&#x30E7;&#x30F3;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;</h1>
-<p>Qlik Sense Hub&#x3092;&#x958B;&#x304D;&#x3001;&#x53F3;&#x4E0A;&#x306E;&#x300C;&#x2026;&#x300D;&#x30DC;&#x30BF;&#x30F3;&#x304B;&#x3089;&#x300C;Dev Hub&#x300D;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3057;&#x307E;&#x3059;&#x3002;<br>&#x65E2;&#x5B9A;&#x306E;Web&#x30D6;&#x30E9;&#x30A6;&#x30B6;&#x304C;&#x8D77;&#x52D5;&#x3057;&#x3001; Dev Hub &#x304C;&#x958B;&#x304B;&#x308C;&#x307E;&#x3059;&#x3002;<br><img src="img/Enter_Dev_Hub.png" alt="Enter_Dev_Hub">
-<img src="img/Dev_Hub_Main_Page.png" alt="Dev_Hub_Main_Page"></p>
-<p>&#x65B0;&#x898F;&#x30A8;&#x30AF;&#x30B9;&#x30C6;&#x30F3;&#x30B7;&#x30E7;&#x30F3;&#x3092;&#x4F5C;&#x6210;&#x3057;&#x307E;&#x3059;&#x3002;<br>&#x53F3;&#x4E0A;&#x306E;&#x300C;&#xFF0B;&#x300D;&#x30DC;&#x30BF;&#x30F3;&#x304B;&#x3089;&#x300C;Create new Extension&#x300D;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3057;&#x307E;&#x3059;&#x3002;<br><img src="img/Menu_Create_New_Extension.png" alt="Menu_Create_New_Extension"><br>&#x30A8;&#x30AF;&#x30B9;&#x30C6;&#x30F3;&#x30B7;&#x30E7;&#x30F3;&#x306E;&#x540D;&#x524D;&#x3092;&#x5165;&#x529B;&#x3057;&#x307E;&#x3059;&#x3002;<br>&#x30C6;&#x30F3;&#x30D7;&#x30EC;&#x30FC;&#x30C8;&#x306F;&#x300C;Table template&#x300D;&#x3092;&#x9078;&#x629E;&#x3057;&#x307E;&#x3059;&#x3002;<br><img src="img/Choose_Name_Extension.png" alt="Choose_Name_Extension"></p>
-<p>&#x4E00;&#x822C;&#x7684;&#x306A;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x3092;&#x96C6;&#x8A08;&#x3059;&#x308B;&#x6A5F;&#x80FD;&#x3092;&#x6301;&#x3063;&#x305F;&#x30A8;&#x30AF;&#x30B9;&#x30C6;&#x30F3;&#x30B7;&#x30E7;&#x30F3;&#x306E;&#x30C6;&#x30F3;&#x30D7;&#x30EC;&#x30FC;&#x30C8;&#x304C;&#x4F5C;&#x6210;&#x3055;&#x308C;&#x307E;&#x3059;&#x3002;
-<img src="img/Created_Extension_From_Template.png" alt="Created_Extension_From_Template">
-&#x3053;&#x306E;&#x307E;&#x307E;Dev Hub&#x4E0A;&#x3067;&#x30A8;&#x30AF;&#x30B9;&#x30C6;&#x30F3;&#x30B7;&#x30E7;&#x30F3;&#x3092;&#x7DE8;&#x96C6;&#x3059;&#x308B;&#x3053;&#x3068;&#x3082;&#x3067;&#x304D;&#x307E;&#x3059;&#x304C;&#x3001;&#x4ECA;&#x5F8C;&#x306E;&#x4F5C;&#x696D;&#x306F;Visual Studio Code&#x7B49;&#x306E;&#x30A8;&#x30C7;&#x30A3;&#x30BF;&#x3067;&#x884C;&#x3046;&#x3053;&#x3068;&#x3092;&#x5F37;&#x304F;&#x304A;&#x52E7;&#x3081;&#x3057;&#x307E;&#x3059;&#x3002;</p>
-<p>&#x4F5C;&#x6210;&#x3055;&#x308C;&#x305F;&#x30A8;&#x30AF;&#x30B9;&#x30C6;&#x30F3;&#x30B7;&#x30E7;&#x30F3;&#x306F;<code>C:\Users\{USERNAME}\Documents\Qlik\Sense\Extensions</code>&#x306B;&#x4FDD;&#x5B58;&#x3055;&#x308C;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;</p>
+                                <p>&#x3053;&#x306E;&#x30DA;&#x30FC;&#x30B8;&#x3067;&#x4F7F;&#x3046;qvf&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092; <a href="">&#x30C0;&#x30A6;&#x30F3;&#x30ED;&#x30FC;&#x30C9;</a></p>
+<h1 id="&#x307E;&#x305A;&#x306F;&#x30AB;&#x30B9;&#x30BF;&#x30DE;&#x30A4;&#x30BA;&#x3057;&#x306A;&#x3044;&#x3067;&#x4F7F;&#x3063;&#x3066;&#x307F;&#x308B;">&#x307E;&#x305A;&#x306F;&#x30AB;&#x30B9;&#x30BF;&#x30DE;&#x30A4;&#x30BA;&#x3057;&#x306A;&#x3044;&#x3067;&#x4F7F;&#x3063;&#x3066;&#x307F;&#x308B;</h1>
+<p>Qlik Sense&#x3067;&#x30B5;&#x30F3;&#x30D7;&#x30EB;&#x30A2;&#x30D7;&#x30EA;&#x3092;&#x958B;&#x304D;&#x3001;&#x7DE8;&#x96C6;&#x30E2;&#x30FC;&#x30C9;&#x306B;&#x5207;&#x308A;&#x66FF;&#x3048;&#x307E;&#x3059;&#x3002;<br>&#x300C;&#x30AB;&#x30B9;&#x30BF;&#x30E0;&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x2192;&#x30A8;&#x30AF;&#x30B9;&#x30C6;&#x30F3;&#x30B7;&#x30E7;&#x30F3;&#x300D;&#x304B;&#x3089;&#x4F5C;&#x6210;&#x3057;&#x305F;&#x30A8;&#x30AF;&#x30B9;&#x30C6;&#x30F3;&#x30B7;&#x30E7;&#x30F3;&#x3092;&#x63A2;&#x3057;&#x3001;&#x30B7;&#x30FC;&#x30C8;&#x306B;&#x8FFD;&#x52A0;&#x3057;&#x307E;&#x3059;&#x3002;
+<img src="img/Find_The_Extension.png" alt="Find_The_Extension.png"></p>
+<p>&#x8EF8;&#x306B;&#x300C;<code>&#x5E74;&#x6708;&#x65E5;</code>&#x300D;&#x3092;&#x8FFD;&#x52A0;&#x3057;&#x307E;&#x3059;&#x3002;<br>&#x6570;&#x5F0F;&#x306B;&#x300C;<code>Sum(&#x8CA9;&#x58F2;&#x91D1;&#x984D;)</code>&#x300D;&#x3092;&#x8FFD;&#x52A0;&#x3057;&#x3001;&#x66F8;&#x5F0F;&#x8A2D;&#x5B9A;&#x3092;&#x300C;<code>1,000</code>&#x300D;&#x3068;&#x3057;&#x307E;&#x3059;&#x3002;
+<img src="img/Initiate_Table.png" alt="Initiate_Table"></p>
+<p><code>&#x5E74;&#x6708;&#x65E5;</code>&#x3092;&#x8EF8;&#x3068;&#x3057;&#x3066;<code>&#x8CA9;&#x58F2;&#x91D1;&#x984D;</code>&#x304C;&#x96C6;&#x8A08;&#x3055;&#x308C;&#x307E;&#x3057;&#x305F;&#x304C;&#x3001;&#x3044;&#x304F;&#x3064;&#x304B;&#x306E;&#x6A5F;&#x80FD;&#x304C;&#x8DB3;&#x308A;&#x3066;&#x3044;&#x307E;&#x305B;&#x3093;&#x3002;  </p>
+<ul>
+<li>&#x8EF8;<code>&#x5E74;&#x6708;&#x65E5;</code>&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3057;&#x3066;&#x3082;&#x9805;&#x76EE;&#x304C;&#x9078;&#x629E;&#x3055;&#x308C;&#x306A;&#x3044;</li>
+<li>&#x30BB;&#x30EB;&#x306E;&#x80CC;&#x666F;&#x8272;&#x304C;&#x8A2D;&#x5B9A;&#x3067;&#x304D;&#x306A;&#x3044;</li>
+<li>&#x30B9;&#x30BF;&#x30A4;&#x30EB;&#x304C;&#x9069;&#x7528;&#x3055;&#x308C;&#x3066;&#x304A;&#x3089;&#x305A;&#x3001;&#x30C1;&#x30E3;&#x30FC;&#x30C8;&#x306B;&#x304A;&#x3057;&#x3083;&#x308C;&#x611F;&#x304C;&#x8DB3;&#x308A;&#x306A;&#x3044;</li>
+</ul>
+<p>&#x30A8;&#x30AF;&#x30B9;&#x30C6;&#x30F3;&#x30B7;&#x30E7;&#x30F3;&#x3092;&#x7DE8;&#x96C6;&#x3057;&#x3066;&#x8DB3;&#x308A;&#x306A;&#x3044;&#x6A5F;&#x80FD;&#x3092;&#x8FFD;&#x52A0;&#x3057;&#x3066;&#x3086;&#x304D;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;</p>
 
                                 
                                 </section>
@@ -371,12 +375,12 @@
 
             
                 
-                <a href="Tutorial1_Make_Strait_Table.html" class="navigation navigation-prev " aria-label="Previous page: ストレートテーブル作成">
+                <a href="Make_Extension.html" class="navigation navigation-prev " aria-label="Previous page: テンプレートからエクステンション作成">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="Use_Default_Extension.html" class="navigation navigation-next " aria-label="Next page: まずはカスタマイズしないで使ってみる">
+                <a href="Extension_File_List.html" class="navigation navigation-next " aria-label="Next page: エクステンションのファイル一覧">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -387,7 +391,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"テンプレートからエクステンション作成","level":"2.1.1","depth":2,"next":{"title":"まずはカスタマイズしないで使ってみる","level":"2.1.2","depth":2,"path":"Tutorial1/Use_Default_Extension.md","ref":"Tutorial1/Use_Default_Extension.md","articles":[]},"previous":{"title":"ストレートテーブル作成","level":"2.1","depth":1,"path":"Tutorial1/Tutorial1_Make_Strait_Table.md","ref":"Tutorial1/Tutorial1_Make_Strait_Table.md","articles":[{"title":"テンプレートからエクステンション作成","level":"2.1.1","depth":2,"path":"Tutorial1/Make_Extension.md","ref":"Tutorial1/Make_Extension.md","articles":[]},{"title":"まずはカスタマイズしないで使ってみる","level":"2.1.2","depth":2,"path":"Tutorial1/Use_Default_Extension.md","ref":"Tutorial1/Use_Default_Extension.md","articles":[]},{"title":"エクステンションのファイル一覧","level":"2.1.3","depth":2,"path":"Tutorial1/Extension_File_List.md","ref":"Tutorial1/Extension_File_List.md","articles":[]},{"title":"HTMLをいじってみる","level":"2.1.4","depth":2,"path":"Tutorial1/Edit_HTML.md","ref":"Tutorial1/Edit_HTML.md","articles":[]},{"title":"軸・数式を設定する","level":"2.1.5","depth":2,"path":"Tutorial1/Add_Columns.md","ref":"Tutorial1/Add_Columns.md","articles":[]},{"title":"テーブルを表示する","level":"2.1.6","depth":2,"path":"Tutorial1/Show_Table.md","ref":"Tutorial1/Show_Table.md","articles":[]},{"title":"スタイルを設定する","level":"2.1.7","depth":2,"path":"Tutorial1/Apply_Style.md","ref":"Tutorial1/Apply_Style.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Tutorial1/Make_Extension.md","mtime":"2019-08-15T07:43:02.031Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-08-15T07:45:01.769Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"まずはカスタマイズしないで使ってみる","level":"2.1.2","depth":2,"next":{"title":"エクステンションのファイル一覧","level":"2.1.3","depth":2,"path":"Tutorial1/Extension_File_List.md","ref":"Tutorial1/Extension_File_List.md","articles":[]},"previous":{"title":"テンプレートからエクステンション作成","level":"2.1.1","depth":2,"path":"Tutorial1/Make_Extension.md","ref":"Tutorial1/Make_Extension.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Tutorial1/Use_Default_Extension.md","mtime":"2019-08-15T07:41:27.251Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-08-15T07:45:01.769Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

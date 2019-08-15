@@ -8,7 +8,9 @@
 
 * [ストレートテーブル作成](Tutorial1/Tutorial1_Make_Strait_Table.md)
 
-    * [エクステンションを作成する](Tutorial1/Make_Extension.md)
+    * [テンプレートからエクステンション作成](Tutorial1/Make_Extension.md)
+
+    * [まずはカスタマイズしないで使ってみる](Tutorial1/Use_Default_Extension.md)
 
     * [エクステンションのファイル一覧](Tutorial1/Extension_File_List.md)
 
