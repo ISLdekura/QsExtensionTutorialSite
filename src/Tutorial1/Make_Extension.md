@@ -18,4 +18,4 @@ Qlik Sense Hubを開き、右上の「…」ボタンから「Dev Hub」をク�
 作成されたエクステンションは`C:\Users\{USERNAME}\Documents\Qlik\Sense\Extensions`に保存されています。
 
 ここまでの作業内容をダウンロード:  
-[ダウンロード](https://github.com/ISLdekura/QsExtensionTutorialSite/Working_Extension/1_1/)
+[ダウンロード](https://github.com/ISLdekura/QsExtensionTutorialSite/tree/master/Working_Extension/1_1)
