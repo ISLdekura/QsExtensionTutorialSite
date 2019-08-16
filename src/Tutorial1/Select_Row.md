@@ -1,3 +1,5 @@
+このページで作成するファイルを[ダウンロード](https://github.com/ISLdekura/QsExtensionTutorialSite/tree/master/Working_Extension/1_4)
+
 # 行を選択できるようにする
 テーブルをクリックしたときに行が選択されるように変更しましょう。
 
@@ -68,6 +70,9 @@ JavaScriptから項目を選択したいときはQlik Sense APIを使用しま�
 					return
 				}
 
+                // セルの背景色を変更する
+                this.setAttribute("style", "background-color: #0000ff");
+
 				// パラメータを取得して項目を選択する
 				var qDimNumber = parseInt(this.getAttribute("qDimNumber"));
 				var qElemNumber = parseInt(this.getAttribute("qElemNumber"));
@@ -76,3 +81,9 @@ JavaScriptから項目を選択したいときはQlik Sense APIを使用しま�
 			// ---------- 追加 ここまで ----------
 			return qlik.Promise.resolve();
 ```
+
+ファイルの修正が終わったら上書き保存し、Qlik Senseを`F5`で画面をリロードしましょう。  
+エクステンションが再読み込みされるとセルをクリックして値を選択することができるようになっています。  
+上手くいかない場合は編集する場所を間違えていないか確認し、Qlik Senseを再起動してみてください。  
+![Click_And_Select](img/Click_And_Select.gif)
+
