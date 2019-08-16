@@ -337,6 +337,33 @@
                                 
                                 <h1 id="&#x884C;&#x3092;&#x9078;&#x629E;&#x3067;&#x304D;&#x308B;&#x3088;&#x3046;&#x306B;&#x3059;&#x308B;">&#x884C;&#x3092;&#x9078;&#x629E;&#x3067;&#x304D;&#x308B;&#x3088;&#x3046;&#x306B;&#x3059;&#x308B;</h1>
 <p><code>function createRows ( rows, dimensionInfo ) {</code><br><code>var html = &quot;&quot;;</code><br><code>rows.forEach( function ( row ) {</code><br><code>html += &apos;&lt;tr&gt;&apos;;</code><br><code>row.forEach( function ( cell, key ) {</code><br><code>if ( cell.qIsOtherCell ) {</code><br><code>cell.qText = dimensionInfo[key].othersLabel;</code><br><code>}</code><br><code>html += &quot;&lt;td &quot;;</code><br><code>if ( !isNaN( cell.qNum ) ) {</code><br><code>html += &quot;class=&apos;numeric&apos;&quot;;</code><br><code>}</code><br><strong><code>if (cell.qState === &quot;O&quot; || cell.qState === &quot;S&quot;){</code></strong><br><strong><code>// &#x5217;&#x304C;&#x8EF8;&#x306E;&#x3068;&#x304D;&#x306E;&#x307F;&#x5C5E;&#x6027;&#x3092;&#x8FFD;&#x52A0;</code></strong><br><strong><code>// &quot;O&quot; =&gt; option(&#x767D;&#x72B6;&#x614B;), &quot;S&quot; =&gt; selected(&#x7DD1;&#x72B6;&#x614B;)</code></strong><br><strong><code>html += &quot; qDim &quot;;</code></strong><br><strong><code>html += &quot; qElemNumber=&apos;&quot; + cell.qElemNumber + &quot;&apos; &quot;;</code></strong><br><strong><code>html += &quot; qDimNumber=&apos;&quot; + key + &quot;&apos; &quot;;</code></strong><br><strong><code>}</code></strong><br><code>html += &apos;&gt;&apos; + cell.qText + &apos;&lt;/td&gt;&apos;;</code><br><code>} );</code><br><code>html += &apos;&lt;/tr&gt;&apos;;</code><br><code>} );</code><br><code>return html;</code><br><code>}</code>  </p>
+<pre><code class="lang-js">    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">createRows</span> (<span class="hljs-params"> rows, dimensionInfo </span>) </span>{
+        <span class="hljs-keyword">var</span> html = <span class="hljs-string">&quot;&quot;</span>;
+        rows.forEach( <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"> row </span>) </span>{
+            html += <span class="hljs-string">&apos;&lt;tr&gt;&apos;</span>;
+            row.forEach( <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"> cell, key </span>) </span>{
+                <span class="hljs-keyword">if</span> ( cell.qIsOtherCell ) {
+                    cell.qText = dimensionInfo[key].othersLabel;
+                }
+                html += <span class="hljs-string">&quot;&lt;td &quot;</span>;
+                <span class="hljs-keyword">if</span> ( !<span class="hljs-built_in">isNaN</span>( cell.qNum ) ) {
+                    html += <span class="hljs-string">&quot;class=&apos;numeric&apos;&quot;</span>;
+                }
+                <span class="hljs-keyword">if</span> (cell.qState === <span class="hljs-string">&quot;O&quot;</span> || cell.qState === <span class="hljs-string">&quot;S&quot;</span>){
+                    <span class="hljs-comment">// &#x5217;&#x304C;&#x8EF8;&#x306E;&#x3068;&#x304D;&#x306E;&#x307F;&#x5C5E;&#x6027;&#x3092;&#x8FFD;&#x52A0;</span>
+                    <span class="hljs-comment">// &quot;O&quot; =&gt; option(&#x767D;&#x72B6;&#x614B;), &quot;S&quot; =&gt; selected(&#x7DD1;&#x72B6;&#x614B;)</span>
+                    html += <span class="hljs-string">&quot; qDim &quot;</span>;
+                    html += <span class="hljs-string">&quot; qElemNumber=&apos;&quot;</span> + cell.qElemNumber + <span class="hljs-string">&quot;&apos; &quot;</span>;
+                    html += <span class="hljs-string">&quot; qDimNumber=&apos;&quot;</span> + key + <span class="hljs-string">&quot;&apos; &quot;</span>;
+                }
+                <span class="hljs-built_in">console</span>.log(cell, key);
+                html += <span class="hljs-string">&apos;&gt;&apos;</span> + cell.qText + <span class="hljs-string">&apos;&lt;/td&gt;&apos;</span>;
+            } );
+            html += <span class="hljs-string">&apos;&lt;/tr&gt;&apos;</span>;
+        } );
+        <span class="hljs-keyword">return</span> html;
+    }
+</code></pre>
 
                                 
                                 </section>
@@ -380,7 +407,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"行を選択できるようにする","level":"2.1.4","depth":2,"next":{"title":"軸・数式を設定する","level":"2.1.5","depth":2,"path":"Tutorial1/Add_Columns.md","ref":"Tutorial1/Add_Columns.md","articles":[]},"previous":{"title":"ファイル一覧","level":"2.1.3","depth":2,"path":"Tutorial1/Extension_File_List.md","ref":"Tutorial1/Extension_File_List.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Tutorial1/Select_Row.md","mtime":"2019-08-16T02:56:26.150Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-08-16T02:56:31.509Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"行を選択できるようにする","level":"2.1.4","depth":2,"next":{"title":"軸・数式を設定する","level":"2.1.5","depth":2,"path":"Tutorial1/Add_Columns.md","ref":"Tutorial1/Add_Columns.md","articles":[]},"previous":{"title":"ファイル一覧","level":"2.1.3","depth":2,"path":"Tutorial1/Extension_File_List.md","ref":"Tutorial1/Extension_File_List.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Tutorial1/Select_Row.md","mtime":"2019-08-16T03:00:38.976Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-08-16T03:00:43.014Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
