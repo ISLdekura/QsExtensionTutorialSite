@@ -1,6 +1,6 @@
 このページで作成するファイルを[ダウンロード](https://github.com/ISLdekura/QsExtensionTutorialSite/tree/master/Working_Extension/1_1)
 
-# エクステンションを作成する
+# テンプレートからエクステンション作成
 Qlik Sense Hubを開き、右上の「…」ボタンから「Dev Hub」をクリックします。  
 既定のWebブラウザが起動し、 Dev Hub が開かれます。  
 ![Enter_Dev_Hub](img/Enter_Dev_Hub.png)
