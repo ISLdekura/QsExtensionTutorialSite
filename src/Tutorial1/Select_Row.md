@@ -17,12 +17,13 @@ Qlik Senseのエクステンション開発では主に上記の2か所を編集
 ## 変更内容
 JavaScriptから項目を選択したいときはQlik Sense APIを使用します。  
 今回使用するのは `backendApi.selectValues(qDimNo, qValues, qToggleMode)`です。
-([関数のヘルプ](https://help.qlik.com/en-US/sense-developer/June2019/Subsystems/APIs/Content/Sense_ClientAPIs/BackendAPI/selectvalues-method.htm))  
+([関数のヘルプ](https://help.qlik.com/en-US/sense-developer/June2019/Subsystems/APIs/Content/Sense_ClientAPIs/BackendAPI/selectvalues-method.htm)) 
+
 変更点は2か所あります。  
 最初に、テーブルを作成する時に行番号など選択に必要な情報をHTMLに埋め込んでおきます。  
 その後要素にイベントリスナーを追加し、APIを呼び出して選択状態を変更します。
 
-①
+変更点①
 `TableExtension.js`にコードを追加します。  
 ファイル5行目～の`createRows()`関数に追記します。
 ```js
@@ -59,7 +60,7 @@ JavaScriptから項目を選択したいときはQlik Sense APIを使用しま�
 	}
 ```
 
-②
+変更点②
 ファイル後半にある`paint()`関数の`return`文直前にクリックされたときの処理を追加します。  
 ```js
 			// ---------- 追加 ここから ----------
