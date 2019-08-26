@@ -14,6 +14,8 @@
 
     * [ファイル一覧](Tutorial1/Extension_File_List.md)
 
+    * [DevToolsを開く](Tutorial1/DevTools.md)
+
     * [行を選択できるようにする](Tutorial1/Select_Row.md)
 
     * [軸・数式を設定する](Tutorial1/Add_Columns.md)
