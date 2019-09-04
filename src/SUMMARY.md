@@ -18,6 +18,8 @@
 
     * [行を選択できるようにする](Tutorial1/Select_Row.md)
 
+    * [背景色・テキストの色を設定する](Tutorial1/Colors.md)
+
     * [軸・数式を設定する](Tutorial1/Add_Columns.md)
 
     * [テーブルを表示する](Tutorial1/Show_Table.md)
