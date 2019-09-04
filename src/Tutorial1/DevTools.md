@@ -1,5 +1,5 @@
 # DevToolsを開く
-Qlik Senseのブラウザ部分は [Chromium](https://www.chromium.org/) というブラウザで動いています。  
+Qlik Senseの画面表示部分は [Chromium](https://www.chromium.org/) というブラウザで動いています。  
 開発者ツール(DevTools)はエクステンションを作っているときに便利な機能が詰まっています。  
 
 DevToolsはQlik Senseの画面を`Ctrl`+`Shift`+`右クリック`で表示されるメニューから開くことができます。  
