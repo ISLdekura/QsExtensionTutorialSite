@@ -89,7 +89,8 @@ define( ["qlik", "jquery", "text!./style.css"], function ( qlik, $, cssContent )
 ```
 
 2箇所目は関数`createRows()`内です。  
-htmlに色情報を埋め込んでゆきます。
+htmlに色情報を埋め込んでゆきます。  
+加えてフォントの変更・適切なマージン設定等の見た目に関する設定も適用します。  
 ![add_style.png](img/add_style.png)  
 ```js
                 // ---------- 追加 ここから (行を選択) ----------
@@ -118,9 +119,9 @@ htmlに色情報を埋め込んでゆきます。
 
 					// style属性の終わり
 					html += "' ";
-				}
+                }
+                html += "><div class='qv-st-data-cell ng-scope qv-st-data-cell-dimension-value qv-st-data-cell-numeric'><div class='qv-st-value'><div class='ng-binding ng-scope'>" + cell.qText + '</div></div></div></td>';
 				// ---------- 追加 ここまで ----------
-                html += ">" + cell.qText + "</td>";
 ```
 
 以上の変更を加えるとメジャーに設定した背景色・テキストの色がチャートに反映されるようになります。  
