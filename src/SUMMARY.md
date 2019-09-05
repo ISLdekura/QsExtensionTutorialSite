@@ -20,11 +20,7 @@
 
     * [背景色・テキストの色を設定する](Tutorial1/Colors.md)
 
-    * [軸・数式を設定する](Tutorial1/Add_Columns.md)
-
-    * [テーブルを表示する](Tutorial1/Show_Table.md)
-
-    * [スタイルを設定する](Tutorial1/Apply_Style.md)
+    * [書式を設定する(フォントサイズ・スタイル)](Tutorial1/Font_Size_and_Style.md)
 
 -----
 
