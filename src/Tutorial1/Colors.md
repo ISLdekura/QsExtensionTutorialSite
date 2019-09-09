@@ -122,6 +122,10 @@ htmlに色情報を埋め込んでゆきます。
                 }
                 html += "><div class='qv-st-data-cell ng-scope qv-st-data-cell-dimension-value qv-st-data-cell-numeric'><div class='qv-st-value'><div class='ng-binding ng-scope'>" + cell.qText + '</div></div></div></td>';
 				// ---------- 追加 ここまで ----------
+
+				// ---------- 削除 ここから ----------
+				// html += '>' + cell.qText + '</td>';
+				// ---------- 削除 ここまで ----------
 ```
 
 以上の変更を加えるとメジャーに設定した背景色・テキストの色がチャートに反映されるようになります。  
