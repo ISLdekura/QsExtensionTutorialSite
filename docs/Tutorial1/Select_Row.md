@@ -1,7 +1,7 @@
 このページで作成するファイルを[ダウンロード](https://github.com/ISLdekura/QsExtensionTutorialSite/tree/master/Working_Extension/1_4)
 
 # 行を選択できるようにする
-基本的な説明を終えたところで、[カスタマイズしないで使ってみる](Tutorial1/Use_Default_Extension.md)で問題になっていた箇所を解決してゆきましょう。  
+基本的な説明を終えたところで、[カスタマイズしないで使ってみる](Use_Default_Extension.md)で問題になっていた箇所を解決してゆきましょう。  
 デフォルト状態のエクステンションは次の3点が問題になっていました。
 
 - 軸`年月日`をクリックしても項目が選択されない
