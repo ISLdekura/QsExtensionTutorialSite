@@ -19,6 +19,12 @@ AngularJSについては [AngularJS公式マニュアル](https://angular.io/)�
 app APIによって取得したシート名とIDの情報をボタンに設定し、それをクリックするとNavigation APIによってシート遷移を行います。  
 スタイルはLeonardo UIのTabsetを利用しています。
 
+AngularJSの機能として、以下の要素を使用しています。
+- `ng-repeat` リストから1個ずつ要素を取り出し、タグを繰り返します。
+- `ng-click` 要素がクリックされたときに呼び出される処理を記述します。
+
+コントローラーに定義されている変数は `{{}}` で囲むことで参照できます。
+
 ```js
 'use strict';
 define( [ "qlik"
