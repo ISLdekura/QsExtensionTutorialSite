@@ -365,6 +365,7 @@ define( [ <span class="hljs-string">&quot;qlik&quot;</span>
         `</span>,
         controller: [<span class="hljs-string">&apos;$scope&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"> $scope </span>) </span>{
             $scope.sheets = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+                <span class="hljs-comment">// &#x30B7;&#x30FC;&#x30C8;&#x306E;&#x30BF;&#x30A4;&#x30C8;&#x30EB;&#x30FB;&#x30B7;&#x30FC;&#x30C8;ID&#x306E;&#x4E00;&#x89A7;&#x3092;&#x53D6;&#x5F97;&#x3059;&#x308B;</span>
                 <span class="hljs-keyword">const</span> app = qlik.currApp();
                 <span class="hljs-keyword">let</span> sheetList = [];
                 app.getList(<span class="hljs-string">&quot;sheet&quot;</span>).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">result</span>)</span>{
@@ -380,6 +381,7 @@ define( [ <span class="hljs-string">&quot;qlik&quot;</span>
             }();
 
             $scope.gotoSheet = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">id</span>)</span>{
+                <span class="hljs-comment">// ID&#x3067;&#x6307;&#x5B9A;&#x3055;&#x308C;&#x305F;&#x30B7;&#x30FC;&#x30C8;&#x306B;&#x79FB;&#x52D5;&#x3059;&#x308B;</span>
                 qlik.navigation.gotoSheet(id);
             }
         }]
@@ -387,7 +389,8 @@ define( [ <span class="hljs-string">&quot;qlik&quot;</span>
 });
 </code></pre>
 <p>&#x4F5C;&#x6210;&#x3057;&#x305F;&#x30A8;&#x30AF;&#x30B9;&#x30C6;&#x30F3;&#x30B7;&#x30E7;&#x30F3;&#x306E;&#x898B;&#x305F;&#x76EE;&#x306F;&#x4EE5;&#x4E0B;&#x306E;&#x3088;&#x3046;&#x306B;&#x306A;&#x308A;&#x307E;&#x3059;&#x3002;
-<img src="img/sheetListExtension.png" alt="SheetListExtension"></p>
+<img src="img/sheetListExtension.png" alt="SheetListExtension">
+&#x30B7;&#x30FC;&#x30C8;&#x540D;&#x306E;&#x30C6;&#x30AD;&#x30B9;&#x30C8;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3059;&#x308B;&#x3068;&#x305D;&#x306E;&#x30B7;&#x30FC;&#x30C8;&#x3078;&#x79FB;&#x52D5;&#x3059;&#x308B;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;</p>
 
                                 
                                 </section>
@@ -431,7 +434,7 @@ define( [ <span class="hljs-string">&quot;qlik&quot;</span>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"シート一覧を表示・遷移する","level":"3.1.1","depth":2,"next":{"title":"進む・戻る・選択をクリア","level":"3.1.2","depth":2,"path":"Tutorial2/Naviation_Button.md","ref":"Tutorial2/Naviation_Button.md","articles":[]},"previous":{"title":"ナビゲーション","level":"3.1","depth":1,"path":"Tutorial2/Tutorial2_Navigation.md","ref":"Tutorial2/Tutorial2_Navigation.md","articles":[{"title":"シート一覧を表示・遷移する","level":"3.1.1","depth":2,"path":"Tutorial2/Show_Sheets.md","ref":"Tutorial2/Show_Sheets.md","articles":[]},{"title":"進む・戻る・選択をクリア","level":"3.1.2","depth":2,"path":"Tutorial2/Naviation_Button.md","ref":"Tutorial2/Naviation_Button.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Tutorial2/Show_Sheets.md","mtime":"2019-12-24T08:50:41.419Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-24T08:57:54.831Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"シート一覧を表示・遷移する","level":"3.1.1","depth":2,"next":{"title":"進む・戻る・選択をクリア","level":"3.1.2","depth":2,"path":"Tutorial2/Naviation_Button.md","ref":"Tutorial2/Naviation_Button.md","articles":[]},"previous":{"title":"ナビゲーション","level":"3.1","depth":1,"path":"Tutorial2/Tutorial2_Navigation.md","ref":"Tutorial2/Tutorial2_Navigation.md","articles":[{"title":"シート一覧を表示・遷移する","level":"3.1.1","depth":2,"path":"Tutorial2/Show_Sheets.md","ref":"Tutorial2/Show_Sheets.md","articles":[]},{"title":"進む・戻る・選択をクリア","level":"3.1.2","depth":2,"path":"Tutorial2/Naviation_Button.md","ref":"Tutorial2/Naviation_Button.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Tutorial2/Show_Sheets.md","mtime":"2019-12-25T00:42:01.825Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-25T00:49:40.875Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

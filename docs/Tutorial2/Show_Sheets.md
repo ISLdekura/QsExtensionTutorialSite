@@ -43,6 +43,7 @@ function (qlik) {
 		`,
 		controller: ['$scope', function( $scope ) {
 			$scope.sheets = function(){
+				// シートのタイトル・シートIDの一覧を取得する
 				const app = qlik.currApp();
 				let sheetList = [];
 				app.getList("sheet").then(function(result){
@@ -58,6 +59,7 @@ function (qlik) {
             }();
             
 			$scope.gotoSheet = function(id){
+				// IDで指定されたシートに移動する
 				qlik.navigation.gotoSheet(id);
 			}
 		}]
@@ -67,3 +69,4 @@ function (qlik) {
 
 作成したエクステンションの見た目は以下のようになります。
 ![SheetListExtension](img/sheetListExtension.png)
+シート名のテキストをクリックするとそのシートへ移動することができます。
