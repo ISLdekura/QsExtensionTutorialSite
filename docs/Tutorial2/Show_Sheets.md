@@ -67,6 +67,6 @@ function (qlik) {
 });
 ```
 
-作成したエクステンションの見た目は以下のようになります。
-![SheetListExtension](img/sheetListExtension.png)  
-シート名のテキストをクリックするとそのシートへ移動することができます。
+作成したエクステンションの見た目は以下のようになります。  
+シート名のテキストをクリックするとそのシートへ移動することができます。  
+![sheet_navigation](img/sheet_navigation.gif)

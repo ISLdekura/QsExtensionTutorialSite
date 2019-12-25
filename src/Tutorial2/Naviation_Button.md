@@ -60,6 +60,7 @@ function (qlik) {
 });
 ```
 
-エクステンションの見た目は以下のようになります。  
-![navigationExtension](img/navigationExtension.png)  
+エクステンションの見た目・動作は以下のようになります。  
+各ボタンをクリックすることで選択状態の遷移ができています。  
+![selection_buttons](img/selection_buttons.gif)  
 ボタンの色や表示されているアイコンを変更したい場合は [Leonardo UI](https://qlik-oss.github.io/leonardo-ui/icons.html) のドキュメントを参考にHTML部分を書き換えてみましょう。
