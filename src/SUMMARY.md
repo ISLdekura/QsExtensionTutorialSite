@@ -20,8 +20,6 @@
 
     * [背景色・テキストの色を設定する](Tutorial1/Colors.md)
 
-    * [書式を設定する(フォントサイズ・スタイル)](Tutorial1/Font_Size_and_Style.md)
-
 -----
 
 * [ナビゲーション](Tutorial2/Tutorial2_Navigation.md)
