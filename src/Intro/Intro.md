@@ -14,7 +14,7 @@ Qlik Senseが利用している [Leonardo UI](https://qlik-oss.github.io/leonard
 シート一覧を表示する、前後のシートに移動する  
 選択を戻る・やり直し・全選択解除のボタンを作成する
 
-- Qlik Senseに組み込まれているフレームワークである [AngularJs](https://angularjs.org/) を利用する方法を理解する
+- Qlik Senseに組み込まれているフレームワークである [AngularJS](https://angularjs.org/) を利用する方法を理解する
 
 # 前提知識
 このチュートリアルは以下の知識があるとより一層理解しやすくなります。

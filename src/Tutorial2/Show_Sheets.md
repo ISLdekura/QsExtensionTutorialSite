@@ -17,7 +17,7 @@ AngularJSについては [AngularJS公式マニュアル](https://angular.io/)�
 
 以下、サンプルコードです。  
 app APIによって取得したシート名とIDの情報をボタンに設定し、それをクリックするとNavigation APIによってシート遷移を行います。  
-スタイルはLeonardo uiのTabsetを利用しています。
+スタイルはLeonardo UIのTabsetを利用しています。
 
 ```js
 'use strict';
