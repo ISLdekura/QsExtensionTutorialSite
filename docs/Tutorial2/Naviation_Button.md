@@ -8,7 +8,7 @@
 
 jsファイルを開き、以下のように編集します。  
 オブジェクトに表示するボタンは固定のため、テンプレートにHTMLを記入することで見通しよく記述できます。
-ボタンが押されたときの処理はコントローラーに記述し、それぞれがQlik Senseの `app` APIを呼び出して状態遷移を実現しています。
+ボタンが押されたときの処理はコントローラーに記述し、それぞれの関数がQlik Senseの `app` APIを呼び出して状態遷移を実現しています。
 
 ```js
 'use strict';
@@ -59,3 +59,7 @@ function (qlik) {
 	};
 });
 ```
+
+エクステンションの見た目は以下のようになります。  
+![navigationExtension](img/navigationExtension.png)  
+ボタンの色や表示されているアイコンを変更したい場合は [Leonardo UI](https://qlik-oss.github.io/leonardo-ui/icons.html) のドキュメントを参考にHTML部分を書き換えてみましょう。
